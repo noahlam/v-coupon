@@ -6,6 +6,13 @@
                 <div class="amount">5元</div>
             </div>
         </coupon>
+
+        <coupon :config="couponConfig">
+            <div class="couponContent">
+                优惠券
+                <div class="amount">5元</div>
+            </div>
+        </coupon>
     </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div :style="wrapStyle" class="couponWrap">
     <!--临时 slot-->
-    <div class="couponSlot" style="display: none;">
+    <div class="couponSlot" ref="couponSlot" style="display: none;">
       <slot></slot>
     </div>
 
@@ -102,7 +102,7 @@
     },
     methods: {
       renderDom() {
-        let content = document.querySelector('.couponSlot').children[0]
+        let content = this.$refs['couponSlot'].children[0]
         content.setAttribute('xmlns', 'http://www.w3.org/1999/xhtml')
         this.$refs.foreignObject.appendChild(content)
       }

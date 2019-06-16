@@ -1,6 +1,6 @@
 {
   "name": "v-coupon",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "a coupon component for vue",
   "main": "./src/index.js",
   "files": ["src"],
